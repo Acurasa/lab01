@@ -1,0 +1,17 @@
+.images{
+    justify-content: center;
+    display: flex;
+    column-gap: 50px;
+    row-gap: 35px;
+}
+
+.images img{
+height: 300px;
+width: 500px;
+object-fit: cover;
+}
+
+
+
+
+

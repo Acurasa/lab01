@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block title %}Gallery{% endblock %}
+
+{% block content %}
+  <h1>Gallery</h1>
+  <p class="important">
+    Hello!.
+
+    <div class="images">
+        <img src="{{ url_for('static', filename='./img/j1.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='./img/j2.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='./img/j3.jpg') }}" alt="">
+        <img src="{{ url_for('static', filename='./img/j4.jpg') }}" alt="">
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>{% block title %}Home{% endblock %} - My Webpage </title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename="style.css") }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename="favic.png") }}" />
+</head>
+<body>
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About us</a>
+    <a href="/gallery">Gallery</a>
+    <a href="/contact">Contact us</a>
+</nav>
+
+<div class="content">
+    {% block content %}
+        <h1>Home page</h1>
+  <p class="important">
+    Hello Stranger.
+    {% endblock %}
+</div>
+
+
+<footer>
+    Made by <a href="https://github.com/Acurasa/" target="_blank">@Leonid Stasyuk</a>.
+</footer>
+</body>
+</html>
